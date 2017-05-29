@@ -1,12 +1,9 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.js'
-import data from '../src/constants/data';
+import App from './components/App';
 
-$(function() {
-  ReactDOM.render(
-    <App data={data}/>,
-    document.getElementById('app')
-  );
-});
+ReactDOM.render(
+  <App />,
+    document.getElementById('root')
+);
