@@ -13,7 +13,7 @@ var quizQuestions = [
       {
         type: "Homemade",
         content: "Farm"
-      },
+      }
     ]
   },
   {
@@ -30,7 +30,7 @@ var quizQuestions = [
       {
         type: "Homemade",
         content: "Relaxing"
-      },
+      }
     ]
   },
   {
@@ -47,7 +47,7 @@ var quizQuestions = [
       {
         type: "Homemade",
         content: "Bunny"
-      },
+      }
     ]
   },
   {
@@ -64,7 +64,7 @@ var quizQuestions = [
       {
         type: "Homemade",
         content: "Blue"
-      },
+      }
     ]
   },
   {
@@ -81,7 +81,9 @@ var quizQuestions = [
       {
         type: "Homemade",
         content: "Entertaining"
-      },
+      }
     ]
   }
 ];
+
+export default quizQuestions;

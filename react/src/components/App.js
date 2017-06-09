@@ -23,14 +23,13 @@ class App extends Component{
      },
      result: ''
     };
-    this.handleAnswerSelected =this.handleAnswerClick.bind(this);
+    this.handleAnswerSelected =this.handleAnswerSelected.bind(this);
   }
 
 componentWillMount(){
   const shuffledAnswerOptions = quizQuestions.map((question) => this.shuffleArray(question.answers));
-
 this.setState({
-  question: quizQuestion[0].question,
+  question: quizQuestions[0].question,
   answerOptions: shuffledAnswerOptions[0]
   });
 }
@@ -91,7 +90,7 @@ setResults (result) {
   if (result.length === 1) {
     this.setState({ result: result[0] });
   } else {
-    this.setState({ result: "Inconclusive, maybe you're a pancake?"});
+    this.setState({ result: "mystery! Maybe you're not a "});
   }
 }
 
